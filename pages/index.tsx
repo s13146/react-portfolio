@@ -7,6 +7,7 @@ import photo from '../public/photo.png';
 import web1 from '../public/web1.png';
 import {useState} from "react"; 
 import Text from './TextEffects';
+import Education from './Education';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -18,19 +19,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-10 md:px-20 md:mx-20 lg:px-40 dark:bg-gray-900 dark:text-white-100">
+      <main className="bg-white px-10 md:px-20 md:mx-20 lg:px-40 dark:bg-gray-900">
         <section>
-        <nav className="py-10 mb-12 flex justify-between">
-          <h1 className="text-md">Hello, I'm</h1>
-          <ul className=" flex items-center">
+        <nav className="py-10 mb-12 flex justify-between dark:text-white">
+          <h1 className="text-md dark:text-white lg:text-lg">Hello, I'm</h1>
+          <ul className="flex items-center">
             <li>
               <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode) } className="cursor-pointer"/>
             </li>
-            <li><a className="bg-gradient-to-r from-cyan-300 to-teal-600 text-white px-4 py-2 rounded-md ml-8" href="#">CV</a></li>
+            <li><a className="bg-gradient-to-r from-cyan-300 to-teal-600 px-4 py-2 rounded-md ml-8" href="./public/cv.pdf" download="cv.pdf">CV</a></li>
           </ul>
         </nav>
         <div className="">
-           <h5 className="text-4xl font-medium text-center md:font-10xl dark:text-white-100"> 
+           <h5 className="text-4xl font-medium text-center md:font-10xl dark:text-white"> 
            <Text/>
            </h5>
           <h3 className="text-3md text-center pt-6 text-cyan-500 md:font-5xl" >Junior Front-End Developer</h3>
@@ -42,16 +43,16 @@ export default function Home() {
 
         <section>
        <div className="py-8 text-left">
-       <h3 className="text-2xl py-2 ">About me</h3>
+       <h3 className="text-2xl py-2 dark:text-white">About me</h3>
 
-        <p className="text-sm leading-5">I am a Computer Science student at <span className="text-orange-800" > PJAIT
+        <p className="text-sm leading-5 dark:text-white">I am a Computer Science student at <span className="text-orange-800" > PJAIT
         in Gdańsk </span>(4th year). I am a passionate Junior Front-End Developer interested in building beautiful, functional and mobile-friendly websites. I know the basics of HTML/CSS and JavaScript. Currently learning ReactJs. My strong skills are creativity, communication and being a team player. I am motivated to learn and ready for new challenges.</p>
-                
+       <Education/>
       </div>
         </section>
         <h3 className="text-center text-lg font-medium  text-cyan-500 pt-2 pb-2 py-1">Technologies</h3>
         <section className="py-3 flex justify-around md:px-30 ">
-       <div className="shadow-lg p-10 rounded-xl">
+       <div className="shadow-lg p-10 rounded-xl dark:bg-slate-300">
         <h2 className="text-md text-center text-cyan-500 pt-2 pb-2 py-1">Front-End</h2>
         <p className="text-left">HTML</p>
         <p className="text-left">CSS</p>
@@ -59,14 +60,14 @@ export default function Home() {
         <p className="text-left">React</p>
         </div>
 
-        <div className=" shadow-lg p-10 rounded-xl">
-        <h2 className="text-md text-cyan-500 pt-2 pb-2 py-1">Back-end</h2>
+        <div className="shadow-lg p-10 rounded-xl  dark:bg-slate-300">
+        <h2 className="text-md text-cyan-500 pt-2 pb-2 py-1 dark:bg-grey-500">Back-end</h2>
         <p className="text-left">C++</p>
         <p className="text-left">Java</p>
         <p className="text-left">C#</p>
         <p className="text-left">.NET</p>
         </div>
-        <div className=" shadow-lg p-10 rounded-xl">
+        <div className=" shadow-lg p-10 rounded-xl dark:bg-slate-300">
         <h2 className="text-md text-cyan-500 pt-2 pb-2 py-1">Others</h2>
         <p className="text-left">MySQL</p>
         <p className="text-left">Visual Studio Code</p>
@@ -77,8 +78,8 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className="text-2xl py-2">My projects</h3>
-            <p className="text-sm py-2 leading-5">In my project I use HTML, CSS (TailwindCSS), JavaScript with React.js, Node.js and Next.js. 
+            <h3 className="text-2xl py-2 dark:text-white">My projects</h3>
+            <p className="text-sm py-2 leading-5 dark:text-white">In my project I use HTML, CSS (TailwindCSS), JavaScript with React.js, Node.js and Next.js. 
               I still learn new technologis and freameworks. 
             </p>
           </div>
@@ -103,10 +104,10 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <h3 className="text-2xl py-2">Contact with me</h3>
-        <p>kasiamlynska@op.pl</p>
-        <p>Find me on:</p>
-        <div className="text-4xl flex justify-center gap-16 py-3">
+        <h3 className="text-2xl py-2 dark:text-white">Contact with me</h3>
+        <p className="dark:text-white">kasiamlynska@op.pl</p>
+        <p className="dark:text-white">Find me on:</p>
+        <div className="text-4xl flex justify-center gap-16 py-3 dark:text-white">
         <AiFillLinkedin/>
         <AiFillFacebook/>
         <AiFillGithub/>

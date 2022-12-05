@@ -29,7 +29,7 @@ export default function Home() {
             <li><a className="bg-gradient-to-r from-cyan-300 to-teal-600 text-white px-4 py-2 rounded-md ml-8" href="#">CV</a></li>
           </ul>
         </nav>
-        <div className=" dark:text-white-100">
+        <div className="">
            <h5 className="text-4xl font-medium text-center md:font-10xl dark:text-white-100"> 
            <Text/>
            </h5>

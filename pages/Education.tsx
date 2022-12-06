@@ -7,11 +7,11 @@ function Education() {
 
     return (
         <div className="m-auto">
-            <h3 className="text-3xl py-2 text-center dark:text-white">Education</h3>
-            <VerticalTimeline lineColor="#3e497a" className="p-15">
+            <h3 className="text-xl py-5 dark:text-white">Education</h3>
+            <VerticalTimeline lineColor="#834431" className="p-15">
                 <VerticalTimelineElement
                 className="text-cyan-500"
-                date="2019-now"
+                date=" 2019-now"
                 iconStyle={{background:"#eecd27" , color:"white"}}
                 icon={<IoIosSchool/>}
                 >

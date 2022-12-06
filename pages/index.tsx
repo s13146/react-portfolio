@@ -2,7 +2,9 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
-import {AiFillLinkedin, AiFillFacebook, AiFillGithub} from 'react-icons/ai';
+import {AiFillLinkedin, AiFillFacebook, AiFillGithub,} from 'react-icons/ai';
+import {FiMail, FiPhone} from 'react-icons/fi';
+import {TfiLocationPin} from 'react-icons/tfi';
 import photo from '../public/photo.png';
 import web1 from '../public/web1.png';
 import {useState} from "react"; 
@@ -50,10 +52,10 @@ export default function Home() {
        <Education/>
       </div>
         </section>
-        <h3 className="text-center text-lg font-medium  text-cyan-500 pt-2 pb-2 py-1">Technologies</h3>
-        <section className="py-3 flex justify-around md:px-30 ">
+        <h3 className="text-xl py-5 dark:text-white">Technologies</h3>
+        <section className="py-3 flex justify-around md:px-30">
        <div className="shadow-lg p-10 rounded-xl dark:bg-slate-300">
-        <h2 className="text-md text-center text-cyan-500 pt-2 pb-2 py-1">Front-End</h2>
+        <h2 className="text-md text-center text-cyan-500 pt-2 pb-2 py-1 hover:scale-120">Front-End</h2>
         <p className="text-left">HTML</p>
         <p className="text-left">CSS</p>
         <p className="text-left">JavaScript</p>
@@ -61,13 +63,13 @@ export default function Home() {
         </div>
 
         <div className="shadow-lg p-10 rounded-xl  dark:bg-slate-300">
-        <h2 className="text-md text-cyan-500 pt-2 pb-2 py-1 dark:bg-grey-500">Back-end</h2>
-        <p className="text-left">C++</p>
+        <h2 className="text-md text-cyan-500 pt-2 pb-2 py-1  hover:scale-120 dark:bg-grey-500">Back-end</h2>
         <p className="text-left">Java</p>
+        <p className="text-left">Spring Boot</p>
         <p className="text-left">C#</p>
         <p className="text-left">.NET</p>
         </div>
-        <div className=" shadow-lg p-10 rounded-xl dark:bg-slate-300">
+        <div className=" shadow-lg p-10 rounded-xl dark:bg-slate-300 hover:scale-120">
         <h2 className="text-md text-cyan-500 pt-2 pb-2 py-1">Others</h2>
         <p className="text-left">MySQL</p>
         <p className="text-left">Visual Studio Code</p>
@@ -104,15 +106,27 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <h3 className="text-2xl py-2 dark:text-white">Contact with me</h3>
-        <p className="dark:text-white">kasiamlynska@op.pl</p>
-        <p className="dark:text-white">Find me on:</p>
-        <div className="text-4xl flex justify-center gap-16 py-3 dark:text-white">
-        <AiFillLinkedin/>
-        <AiFillFacebook/>
-        <AiFillGithub/>
+        <h3 className="text-2xl py-2  dark:text-white">Contact</h3>
+        <section className="flex justify-around ">
+        <div className="">
+        <p className="text-cyan-500 text-xl p-5" >Katarzyna Węsierska</p>
+        <p className="dark:text-white flex p-2"><TfiLocationPin className="mx-2"/> Gdańsk, Poland</p>
+        <p className="dark:text-white flex  p-2"><FiMail className="mx-2"/> +48 724 744 833</p>
+        <p className="dark:text-white flex p-2"><FiPhone className="mx-2"/> kasiamlynska@op.pl</p>
         </div>
+        <div>
+        <p className="dark:text-white  p-3">Find me on:</p>
+        <div className="text-4xl flex justify-center gap-8 py-3 dark:text-white">
+        <AiFillLinkedin className="hover:scale-150"/>
+        <AiFillFacebook className="hover:scale-150"/>
+        <AiFillGithub className="hover:scale-150"/>
+        </div>
+        </div>
+        </section>
       </main> 
+      <footer className="p-4">
+        <p className="text-center text-sm">Katarzyna Węsierska 2022</p>
+      </footer>
     </div>
   )
 }
